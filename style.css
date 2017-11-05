@@ -1,0 +1,53 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.container div {
+    display: inline-block;
+    width:  49%;
+    overflow: auto;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+.customInputs {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.btn {
+    padding: 7px;
+    border: 0;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.3);
+    margin-right: 10px;
+    color: #ffffff;
+}
+.btn:hover {
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+.btn:active {
+    box-shadow: inset 2px 2px 10px 0px rgba(0,0,0,0.4);
+}
+.btn-create {
+    background: #4AB933;
+}
+.btn-calculate {
+    background: #4267B2;
+}
+.btn-search {
+    background: #F36B7E;
+}
+table, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+footer {
+    color: rgba(160, 160, 160, 1);
+    text-align: center;
+    font-size: 12px;
+}

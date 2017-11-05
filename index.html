@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Take Off Labs Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--FIRST EXERCISE-->
+    <div class="container">
+        <h2>1. Rotate a N by N array by 90 degrees.</h2>
+        <p><em>
+            We will assume that `N` is bigger then 2 and less then 100.
+        </em></p>
+
+        <div>
+            <input type="number"
+                   name="matrixSize"
+                   id="matrixSize"
+                   class="customInputs"
+                   placeholder="Please entre the matrix size">
+        </div>
+        <div>
+            <button class="btn btn-create" onclick="createMatrix()">
+                Create Array
+            </button>
+            <button class="btn btn-calculate" onclick="rotateCreatedMatrix(true)">
+                Rotate clockwise
+            </button>
+            <button class="btn btn-search" onclick="rotateCreatedMatrix(false)">
+                Rotate anticlockwise
+            </button>
+        </div>
+
+        <div>
+            <table>
+                <tbody id="originalMatrix">
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table>
+                <tbody id="rotatedMatrix">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!--SECOND EXERCISE-->
+    <div class="container">
+        <h2>
+            2. Given an array that is sorted, but rotated to the right by an unknown number of times. Find the position
+            of an element.
+        </h2>
+
+        <p><em>
+            We will assume that we have an array, and it's values are integers and it is sorted ascended,
+            then rotated x number of times, clockwise.
+        </em></p>
+
+        <form id="arrayForm" name="arrayForm" onsubmit="validateForm(this)">
+            <div>
+                <input class="customInputs"
+                       type="number"
+                       name="arrayStart"
+                       id="arrayStart"
+                       placeholder="Enter array start value">
+                <input class="customInputs"
+                       type="number"
+                       name="arrayEnd"
+                       id="arrayEnd"
+                       placeholder="Enter array end value">
+                <input class="customInputs"
+                       type="number"
+                       name="arrayStep"
+                       id="arrayStep"
+                       placeholder="Enter array steps size">
+            </div>
+            <div>
+                <button class="btn btn-create"
+                        type="submit">
+                        Generate Array
+                </button>
+                <button class="btn btn-calculate"
+                        onclick="rotateRandomNr()"
+                        type="button">
+                    Rotate and show result
+                </button>
+                <button class="btn btn-search"
+                        type="button"
+                        onclick="openFindElement()">
+                    Find Element
+                </button>
+
+                <p id="resultOfSearch"></p>
+            </div>
+        </form>
+
+
+        <div>
+            <p><b>Original Array:</b> <span id="originalArray"></span></p>
+        </div>
+        <div>
+            <p><b>Rotated Array:</b> <span id="rotatedArray"></span></p>
+        </div>
+    </div>
+
+    <script src="rotateMatrixScript.js"></script>
+    <script src="findElemetInRotatedArrayScript.js"></script>
+
+    <footer>Denisa Lavinia Profir - 2017</footer>
+</body>
+</html>
+<!--Denisa Lavinia Profir - 2017.11.05-->
